@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'New York', serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* src/App.css */
+.langButton {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.langButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.card {
+  padding: 1.0em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: font-size 100ms, font-weight 100ms;
+}
+
+.title:hover {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: gray;
+  margin-bottom: 1.5rem;
+  transition: font-size 100ms, font-weight 100ms;
+}
+.subtitle:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checked {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  color: greenyellow;
+}
+
+/* Add a more elegant font to the body */
